@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            background: #7c32c7;
+background: linear-gradient(90deg, rgba(124, 50, 199, 1) 0%, rgba(213, 144, 232, 1) 100%, rgba(107, 52, 130, 1) 39%, rgba(180, 126, 207, 1) 62%, rgba(185, 98, 217, 1) 77%, rgba(146, 50, 209, 1) 95%);
+            margin-top: 50px;
+            align-items: center;
+            width:500px;
+            border-radius: 20px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: #7c32c7;
+background: linear-gradient(90deg, rgba(124, 50, 199, 1) 0%, rgba(164, 92, 184, 1) 19%, rgba(107, 52, 130, 1) 39%, rgba(180, 126, 207, 1) 62%, rgba(185, 98, 217, 1) 77%, rgba(146, 50, 209, 1) 95%);
+        }
+        .input{
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+        input{
+            border-radius: 10px;
+            width:250px;
+            height:50px;
+            font-size: 15px;
+        }
+        span{
+            color: blue;
+        }
+        button{
+            width:250px;
+            height: 50px;
+            background-color: rgba(64, 0, 255, 0.725);
+            border-radius: 10px;
+            margin-left: 120px;
+            font-size: 20px;
+            
+        }
+        button:hover{
+            color: brown;
+            background-color: rgb(255, 255, 255);
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="h1"> Login Page</h1>
+    
+    <div class="input" id="nam" style="display:none;">
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="input">
+        <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="input">
+        <input type="password" id="pass" placeholder="Enter the password">
+    </div>
+    <button type="submit">Submit</button>
+    <p id="para"> Don't have an account? <span id="link" onclick="showSignup()"> SignUp</span></p>
+    </div>
+</body>
+<script>
+    
+    function signup(){
+        email=document.getElementById("email").value;
+        password=document.getElementById("pass").value;
+        showLogin();
+    }
+    function login(){
+        const mail=document.getElementById("email").value;
+        const pass=document.getElementById("pass").value;
+        if(mail ==email && pass==password){
+            alert("Login successful");
+        }
+        else{
+            alert("Enter  correct mail or password ");
+        }
+    }
+    function showLogin(){
+        document.getElementById("nam").style.display="none";
+        document.getElementById("link").onclick=showSignup;
+        document.getElementById("h1").innerText="Login Page";
+        document.getElementById("para").childNodes[0].textContent="Don't hava an account?";
+        document.getElementById("link").innerText="Sign up";
+        document.querySelector("button").onclick=login;
+    }
+    function showSignup(){
+        const name=document.getElementById("name").value;
+        const email=document.getElementById("email").value;
+        const password=document.getElementById("pass").value;
+        document.getElementById("para").childNodes[0].textContent ="Already have an account? ";
+        document.getElementById("link").innerText = "Login";
+        document.getElementById("h1").innerText="SignUp page";
+        document.getElementById("link").onclick=showLogin;
+        document.getElementById("nam").style.display="block";
+        document.querySelector("button").onclick=signup;
+    }
+    
+</script>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        .dashboard{
+            display:flex;
+            justify-content:center;
+            justify-content: flex-start
+        }
+        .container{
+            margin-left: 0px;
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            margin-right:150 px;
+            height:750px;
+            width:250px;
+           
+        }
+        ul{
+            list-style-type:none;
+        }
+        .input{
+            margin-top: 30px;
+        }
+        .container span{
+            color: brown;
+        }
+        .container h1{
+            margin-left: 50px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;   
+        }
+        .logo i{
+              font-size: 40px;
+              
+                  
+        }  
+        .text{
+            display:flex;
+            flex-direction: column;
+        }
+        .text h1{
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+        }
+        .text p{
+            margin-top: 0px;
+            font-size: 10px;
+        }
+        .input {
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }
+        .active{
+            border-radius: 5px;
+            display:flex;
+            background-color: rgb(70, 65, 233);
+            width:100px;
+            height:30px;
+        }
+        .box span{
+            color: blue;
+        }
+        .box p{
+            margin-left: 10px;
+        }
+        table{
+
+            width: 100%;
+            border: 1px solid rgb(143, 142, 142);
+            border-collapse: collapse;
+            margin-left: 20px;
+            border-radius: 30px;
+            height:700px;
+        }
+        th{
+            border: 1px solid rgb(156, 155, 155);
+            padding: 12px;
+            border-right-color: rgb(241, 236, 236);
+            background-color: rgb(235, 233, 233);
+        }
+        td{
+            border: 1px solid rgb(156, 155, 155);
+            padding: 12px;
+            border-right-color: rgb(241, 236, 236);
+        }
+        td i{
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+        .box1{
+            text-align: center;
+            border-radius: 4px;
+            padding: 8px;
+
+        }
+        .box{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            width:1000px;
+            height:910px;
+            margin-left: 40px;
+        }
+        </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="container">
+              <div class="logo">
+                 <i class="fa-solid fa-graduation-cap" style="color: rgb(53, 11, 241);"></i>
+                 <div class="text">
+                    <h1>SMS</h1>
+                    <p> Student Management System</p>
+                 </div>
+               </div>
+            
+            <ul>
+            <div class="input">
+                <i class="fa-solid fa-calendar" style="color: rgb(134, 138, 143);"></i>
+               <li>Dashborad</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-users" style="color: rgb(134, 138, 143);"></i>
+                <li>Students</li>
+            </div>
+            <div class="input">
+                <div class="active">
+                    
+                    <i class="fa-solid fa-plus" style="color: rgb(134, 138, 143);"></i>
+                    <li >Add Student</li>
+                </div>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-building-columns" style="color: rgb(134, 138, 143);"></i>
+               <li>Departments</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-file" style="color: rgb(134, 138, 143);"></i>
+               <li>Reports</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-user" style="color: rgb(134, 138, 143);"></i>
+               <li>Profile</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-gear" style="color: rgb(134, 138, 143);"></i>
+               <li>Settings</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-file-import" style="color: rgb(236, 55, 95);"></i>
+               <li><span> Logout</span></li>
+            </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>Students</h1>
+            <p><span > Dashboard</span> >  Students</p>
+            <div class="tab">
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Register no</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 </td>
+                            <td>Rahul Sharma</td>
+                            <td>REG1001</td>
+                            <td class="bgc" style="color: blue;">
+                               <div class="box1" style="background-color: rgb(197, 216, 235);">
+                               Computer Science
+                                </div>
+                             </td>
+                            <td>rahul@gmail.com</td>
+                            <td>9876543210</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td></td>
+                        </tr>
+                        <tr>
+                            <td>2 </td>
+                            <td>Priya Singh</td>
+                            <td>REG1002</td>
+                            <td style="color: green; ">
+                                <div class="box1" style="background-color: rgb(198, 235, 198);">
+                                 Electronics
+                                 </div>
+                             </td>
+                            <td>priya@gmail.com</td>
+                            <td>9876543211</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td></td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td> Amit Kumar</td>
+                            <td> REG1003</td>
+                            <td style="color: yellow;">
+                               <div class="box1" style="background-color: rgb(248, 248, 192);">
+                                  Mechanical
+                                </div>
+                            </td>
+                            <td>amit@gmail.com</td>
+                            <td> 9876543212</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td></td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td> Sneha Patel</td>
+                            <td> REG1004</td>
+                            <td style="color: purple;">
+                              <div class="box1" style="background-color: rgb(221, 185, 221);">
+                                 Information Tech
+                                 </div>
+                             </td>
+                            <td>sneha@gmail.com</td>
+                            <td> 9876543213</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td></td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td> Vikram Mehna</td>
+                            <td> REG1005</td>
+                            <td style="color: red;">
+                              <div class="box1" style="background-color: rgb(255, 202, 202);">
+                                 Civil Engineering
+                              </div>
+                            </td>
+                            <td>vikram@gmail.com</td>
+                            <td> 9876543214</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td> Karan Verma</td>
+                            <td> REG1006</td>
+                            <td style="color: blue;">
+                              <div class="box1" style="background-color: rgb(197, 216, 235);">
+                               Computer Science
+                              </div>
+                            </td>
+                            <td>karan@gmail.com</td>
+                            <td> 9876543215</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                  <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td> Anjali Gupta</td>
+                            <td> REG1007</td>
+                            <td style="color: green;">
+                               <div class="box1" style="background-color: rgb(198, 235, 198);">
+                                 Electronics
+                                </div>
+                            </td>
+                            <td>anjali@gmail.com</td>
+                            <td> 9876543215</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td> Rohit Yadav</td>
+                            <td> REG1005</td>
+                            <td style="color: yellow;">
+                              <div class="box1" style="background-color: rgb(248, 248, 192);">
+                              Mechanical
+                              </div>
+                            </td>
+                            <td>rohit@gmail.com</td>
+                            <td> 9876543215</td>
+                            <td> <i class="fa-regular fa-pen-to-square" style="color: rgb(62, 55, 236);"></i>
+                                 <i class="fa-solid fa-trash" style="color: rgb(236, 55, 79);"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

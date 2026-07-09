@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Dahboard</title>
+    <style>
+        .dashboard{
+            display:flex;
+            justify-content:center;
+            justify-content: flex-start
+        }
+        .container{
+            margin-left: 0px;
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            margin-right:150 px;
+            height:750px;
+            width:250px;
+           
+        }
+        ul{
+            list-style-type:none;
+        }
+        
+        .container span{
+            color: brown;
+        }
+        .container h1{
+            margin-left: 50px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;   
+        }
+        .logo i{
+              font-size: 40px;
+              
+                  
+        }  
+        .text{
+            display:flex;
+            flex-direction: column;
+        }
+        .text h1{
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+        }
+        .text p{
+            margin-top: 0px;
+            font-size: 10px;
+        }
+        .input {
+            display:flex;
+            align-items: center;
+            gap:10px;
+            margin-top: 30px;
+        }
+        .active{
+            border-radius: 5px;
+            display:flex;
+            background-color: rgb(70, 65, 233);
+            width:100px;
+            height:30px;
+            
+        }
+        .box span{
+            color: blue;
+        }
+        .box p{
+            margin-left: 10px;
+        }
+        .stud{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            width:1000px;
+            height:650px;
+            margin-left: 40px;
+           
+        }
+        .input-group{
+            display:flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            border-radius: 10px;
+            width:400px;
+            height: 40px;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+        .input-group span{
+              color:brown;
+        }
+        .input-group select{
+            border-radius: 10px;
+            width:400px;
+            height: 40px;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        
+        }
+        .gender{
+            display: flex;
+            margin-top: 20px;
+            
+        }
+        .gender span{
+            color: brown;
+        }
+        .rad{
+            display: flex;  
+            align-items: center;
+            gap: 10px;
+            width:10px;
+            margin-top: 20px;
+            
+        }
+        .row{
+            display: flex;
+            gap: 100px;
+            margin-bottom: 10px;
+            
+            
+        }
+        button{
+            border-radius: 10px;
+            background-color:  rgb(70, 65, 233);
+            width: 150px;
+            height:40px;
+            margin-top: 30px;
+            margin-right: 250px;
+           
+        }    
+        form{
+            display:flex;
+        }
+        .address   input  {
+            height: 70px;
+            margin-top: 10px;
+            width: 950px;
+            
+        }   
+        .address span{
+            color: brown;
+        }
+        .btn{
+            background-color: rgb(248, 247, 244);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="container">
+              <div class="logo">
+                 <i class="fa-solid fa-graduation-cap" style="color: rgb(53, 11, 241);"></i>
+                 <div class="text">
+                    <h1>SMS</h1>
+                    <p> Student Management System</p>
+                 </div>
+               </div>
+            
+            <ul>
+            <div class="input">
+                <i class="fa-solid fa-calendar" style="color: rgb(134, 138, 143);"></i>
+               <li>Dashborad</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-users" style="color: rgb(134, 138, 143);"></i>
+                <li>Students</li>
+            </div>
+            <div class="input">
+                <div class="active">
+                    
+                    <i class="fa-solid fa-plus" style="color: rgb(134, 138, 143);"></i>
+                    <li >Add Student</li>
+                </div>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-building-columns" style="color: rgb(134, 138, 143);"></i>
+               <li>Departments</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-file" style="color: rgb(134, 138, 143);"></i>
+               <li>Reports</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-user" style="color: rgb(134, 138, 143);"></i>
+               <li>Profile</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-gear" style="color: rgb(134, 138, 143);"></i>
+               <li>Settings</li>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-file-import" style="color: rgb(236, 55, 95);"></i>
+               <li><span> Logout</span></li>
+            </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>Add Student</h1>
+            <p><span > Dashboard</span> >  Add Student</p>
+            <form>
+            <div class="stud">
+                <h3>Student Information</h3>
+                <div class="row">
+                  <div class="input-group">
+                    
+                    <label>Full Name <span>*</span></label>
+                    <input type="text" placeholder="Enter full name">
+                  </div>
+                  <div class="input-group">
+                    <label>Register Number<span>*</span></label>
+                    <input type="text" placeholder="Enter register number">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group">
+                    
+                    <label>Department<span>*</span></label>
+                    <select>
+                        <option value="dept">Select Department</option>
+                        <option value="IT">IT</option>
+                        <option vlaue="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                    </select>
+                  </div>
+                  <div class="input-group">
+                    <label>Course<span>*</span></label>
+                    <select>
+                        <option value="cou">Select Course</option>
+                        <opiton value="pyth">Python</opiton>
+                        <option value="java">Java</option>
+                        <option value="web">Web Development</option>
+                        <option value="sql">MYSQl</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row">
+                <div class="input-group">
+                    <label>Year<span>*</span></label>
+                    <select>
+                        <option value="yr">Select Year</option>
+                        <option value="1">1st year</option>
+                        <option value="2">2nd year</option>
+                        <option value="3">3rd year</option>
+                        <option value="4">4th year</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Email<span>*</span></label>
+                    <input type="email" placeholder="Enter email">
+                </div>
+                </div>
+                <div class="row">
+                <div class="input-group">
+                    <label>Phone Number<span>*</span></label>
+                    <input type="number" placeholder="Enter 10 digit phone number">
+                </div>
+                <div class="gender">
+                    <label>Gender<span>*</span></label>
+                    <div class="rad">
+                    <input type="radio" name="gender" value="Male">
+                    <label for>Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for=>Female</label>
+                    <input type="radio" name="gender" value="Others">
+                    <label for=>Others</label>
+                </div>
+                </div>
+                </div>
+                
+                <div class="input-group">
+                    <label> Address<span> * </span></label>
+                </div>
+                <div class="address">
+                    <input type="textarea" placeholder="Enter address">
+                </div>
+                <button onclick="addStudent()">Save Student</button>
+                <button class="btn">Reset</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function addStudent(){
+    let student = {
+        id: document.getElementById("id").value,
+        name: document.getElementById("name").value,
+        age: document.getElementById("age").value
+    };
+
+    fetch("http://localhost:8081/stu", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(student)
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert("Student Added");
+        console.log(data);
+    });
+
+}
+</script>
+</html>
